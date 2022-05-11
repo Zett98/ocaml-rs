@@ -14,7 +14,7 @@ edition = "2018"
 features = [ "without-ocamlopt", "derive", "link" ]
 
 [dependencies]
-ocaml-interop = "0.8.8"
+ocaml-interop = "*"
 ocaml-sys = {path = "./sys", version = "0.22"}
 ocaml-boxroot-sys = {version = "*"}
 ocaml-derive = {path = "./derive", optional = true, version = "0.22"}
@@ -44,3 +44,4 @@ members = [
 
 [patch.crates-io]
 ocaml-boxroot-sys = { version ="0.3.0", git = 'https://gitlab.com/ocaml-rust/ocaml-boxroot', branch = "main" }
+ocaml-interop = { version ="*", git = 'https://github.com/Zett98/ocaml-interop.git', branch = "5.0" }
