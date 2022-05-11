@@ -43,4 +43,4 @@ members = [
 ]
 
 [patch.crates-io]
-ocaml-boxroot-sys = { git = 'https://gitlab.com/ocaml-rust/ocaml-boxroot' }
+ocaml-boxroot-sys = { version ="0.3.0", git = 'https://gitlab.com/ocaml-rust/ocaml-boxroot', branch = "main" }
