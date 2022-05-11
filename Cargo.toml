@@ -16,7 +16,7 @@ features = [ "without-ocamlopt", "derive", "link" ]
 [dependencies]
 ocaml-interop = "0.8.8"
 ocaml-sys = {path = "./sys", version = "0.22"}
-ocaml-boxroot-sys = {version = "0.2"}
+ocaml-boxroot-sys = {version = "*"}
 ocaml-derive = {path = "./derive", optional = true, version = "0.22"}
 cstr_core = {version = "0.2", optional = true}
 ndarray = {version = "^0.15.1", optional = true}
@@ -41,3 +41,6 @@ members = [
   "sys",
   "test"
 ]
+
+[patch.crates-io]
+ocaml-boxroot-sys = { git = 'https://gitlab.com/ocaml-rust/ocaml-boxroot' }
